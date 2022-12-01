@@ -1,0 +1,59 @@
+<!--Esta es la primera página de bienvenida de nuestra Trivia-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="trivia.css">
+  <title>TRIVIATON</title>
+  <style>
+    html {
+      margin: 0;
+      padding: 0;
+      background-image: url(https://previews.123rf.com/images/studiom1/studiom11507/studiom1150700255/42356051-preguntas-patr%C3%B3n-sin-fisuras-ilustraci%C3%B3n-del-vector-puede-ser-utilizado-para-fondo-de-pantalla-fondo.jpg);
+      width: 100%;
+      height: 100%;
+  </style>
+</head>
+
+<body>
+
+
+  <!--- pantalla inicial-->
+  <h1 id="welcome"> BIENVENIDO A NUESTRA TRIVIA</h1>
+
+  <br>
+  <label id="nombre" for="name">¿Cuál es tu nombre?
+    <br><input type="text" id="name"> </br></label>
+
+
+
+  <br><strong> Elije el tema de tu preferencia</strong></br>
+
+
+  <br><button onclick="saludo()"> <a href='/trivia1.html'>Maravillas del
+      Mundo</a></button> </br>
+  <br><button onclick="saludo()"> <a href='/trivia2.html'>Futbol </a></button></br>
+  <br><button onclick="saludo()"> <a href='/trivia3.html'>Disney </a></button></br>
+
+
+  <script>
+    function saludo() {
+      let name = document.getElementById("name");
+      let sobrenombre = name.value;
+      alert(" Bienvenido " + sobrenombre + " ¿List@ para jugar? ");
+    }
+
+  </script>
+
+  <footer>
+    <p>Realizado por:</p>
+    <p>Equipo 5.2</p>
+  </footer>
+
+</body>
+
+</html>

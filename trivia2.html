@@ -1,0 +1,121 @@
+<!--- Luz, esta será una tercera página--->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="trivia.css" rel="stylesheet" type="text/css" />
+  <title>TRIVIATON</title>
+  <style>
+    html {
+      margin: 0;
+      padding: 0;
+      background-image: url(https://thumbs.dreamstime.com/z/fondo-de-los-balones-de-f%C3%BAtbol-de-la-representaci%C3%B3n-d-77738596.jpg);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
+
+  <header>
+    <h1>JUEGO DE PREGUNTAS</h1>
+    <p>FUTBOL</p>
+  </header>
+  <div>
+    <h1><button <span id="tiempo"> </button></span></h1>
+  </div>
+</head>
+
+<body>
+  <div class="container">
+    <section id="p0">
+      <h3> 1 - ¿Cuántos jugadores forman un equipo de fútbol?</h3>
+      <div>
+        <img id="imagen1fut" src="https://i.pinimg.com/originals/54/35/8e/54358e76563534f9868dac93dea9f4e5.gif"
+          alt="Futbol">
+      </div>
+      <label id="incorrecta_a">
+        <input type="radio" value=1 name="p0" onclick="respuesta(0,this)"> 5
+      </label>
+      <label id="incorrecta_b">
+        <input type="radio" value=2 name="p0" onclick="respuesta(0,this)"> 9
+      </label>
+      <label id="correcta1">
+        <input type="radio" value=3 name="p0" onclick="respuesta(0,this)"> 11
+      </label>
+    </section>
+
+    <section id="p1">
+      <h3> 2 - ¿Quién controla un partido de fútbol?</h3>
+      <div>
+        <img id="imagen2fut" src="https://media.tenor.com/7WpFJ8lk9mMAAAAM/voxterego-voxed.gif" alt="Arbitro">
+      </div>
+      <label id="correcta2">
+        <input type="radio" value=1 name="p1" onclick="respuesta(1,this)"> árbitro
+      </label>
+      <label id="incorrecta_c">
+        <input type="radio" value=2 name="p1" onclick="respuesta(1,this)"> jugadores
+      </label>
+      <label id="incorrecta_d">
+        <input type="radio" value=3 name="p1" onclick="respuesta(1,this)"> hinchas
+      </label>
+    </section>
+
+    <section id="p2">
+      <h3> 3 - ¿Cuánto tiempo dura un partido?</h3>
+      <div>
+        <img id="imagen3fut" src="https://i.pinimg.com/originals/ef/44/53/ef4453ab4061e62145137a7642ec5ca7.gif"
+          alt="Cristiano">
+      </div>
+      <label id="incorrecta_e">
+        <input type="radio" value=1 name="p2" onclick="respuesta(2,this)"> 50 min
+      </label>
+      <label id="incorrecta_f">
+        <input type="radio" value=2 name="p2" onclick="respuesta(2,this)"> 60 min
+      </label>
+      <label id="correcta3">
+        <input type="radio" value=3 name="p2" onclick="respuesta(2,this)"> 90 min
+      </label>
+    </section>
+
+    <section id="p3">
+      <h3> 4 - ¿Qué hace el var?</h3>
+      <div>
+        <img id="imagen4fut" src="https://media1.giphy.com/media/21Q0iTg8c1tabEcIBe/giphy.gif" alt="Var">
+      </div>
+      <label id="incorrecta_g">
+        <input type="radio" value=1 name="p3" onclick="respuesta(3,this)"> Sanciona al árbitro
+      </label>
+      <label id="correcta4">
+        <input type="radio" value=2 name="p3" onclick="respuesta(3,this)"> Ayuda al árbitro a evitar errores
+      </label>
+      <label id="incorrecta_h">
+        <input type="radio" value=3 name="p3" onclick="respuesta(3,this)"> Solo graba partidos
+      </label>
+    </section>
+
+
+    <button onclick="corregido()"> CORREGIR </button>
+
+    <h2 id="CA">Cantidad acertadas: <span id="resultados"></span> </h2>
+    <h2 id="CF">Cantidad fallidas: <span id="fallidas"></span> </h2>
+
+    <br><button id="jugar"> <a href="index.html">VOLVER A JUGAR</a> </button> </br>
+
+    <!--<h2>Preguntas acertadas: <span id="resultado"</span> </h2>!-->
+    <script src="trivia2.js"></script>
+  </div>
+  <footer>
+    <p>Realizado por:</p>
+    <p>Equipo 5.2</p>
+
+  </footer>
+</body>
+
+
+</html>

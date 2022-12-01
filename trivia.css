@@ -1,0 +1,373 @@
+    /* esta es la parte del fondo*/
+
+body{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Verdana;
+    height :665px;
+    background-size: 50rem;
+}
+           /*esta es la cabeza del título*/
+
+  header{
+  text-transform: uppercase; 
+   text-align: center;
+   background-color : #000;
+   color: rgb(255, 255, 255);
+  padding: 10px 0;
+  border-radius: 30px;
+  }
+#welcome{
+   text-transform: uppercase; 
+   text-align: center;
+   background-color : #000;
+   color: rgb(255, 255, 255);
+  padding: 10px 0;
+  border-radius: 30px;
+}
+#nombre{
+  position: auto;
+  width: 50%;
+  height: 10%;
+  backgroundColor:  #00fca8;
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-fantasy: Geneva, Verdana, sans-serif;
+  text-align: auto;
+  margin: auto;
+}
+           /*fondo de las preguntas*/
+  .container{
+    text-transform: uppercase;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 7px solid #000;
+    background-color: rgba(127, 255, 212, 0.416)
+  }
+
+.container1{
+  text-transform: uppercase;
+   text-align: center;  
+  max-width: 50px;
+    margin: auto;
+    padding: 20px;
+  color: #ffd900;
+  }
+
+/*marco de las preguntas*/
+  section{
+    text-transform: uppercase;
+  border: 2px solid #dd00fa;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 10px 0;
+  
+  }
+  /* esta es la parte del titulo del inicio*/
+  label{
+    display: block;
+    padding: 3px;
+    border-radius: 7px;
+    cursor: pointer;
+    color: #000;
+    border: 1px solid #000;
+    margin-bottom: 3px;
+    background: #00fca8;
+  
+  }
+  
+  button{
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+  
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  button:hover{
+    background: #a3efdc ;
+    color: #f3eded;
+  }
+  h2{
+    text-align: center;
+  }
+
+/*TIEMPO*/
+#tiempo{
+    display: block;
+    left: 25px;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    text-transform: uppercase;
+    background-color: rgb(231, 228, 7);
+    position: fixed;
+    top: 40px; left: 40px;
+    bottom: 15px;
+    float: left;  
+}
+
+#tiempo{
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#jugar{
+    width: 150px;
+    height: 80px;
+    text-transform: uppercase;
+    bottom: 20px;
+    margin: 10%;
+  position: relative;
+  left: 200px;
+  
+}
+
+/*color de los aciertos y desaciertos*/
+#CA{
+  display: block;
+  width: 350px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  left: 90px;
+}
+
+#CF {
+  display: block;
+  width: 350px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  left: 90px;
+}
+
+/*Primera parte diseño*/
+
+div {
+  background-color: none;
+  width: 100%;
+}
+
+#imagen1trivia
+{
+    width: 300px;
+    height: auto;
+    border-radius: 600px;
+    margin: auto;
+    display: block;
+    padding: 5px;
+    border: 2px solid rgb(238, 27, 192);
+}
+
+#imagen1trivia:hover {
+  -webkit-transform:scale(1.1);
+  transform:scale(0.9);
+}
+
+#imagen2trivia 
+{ 
+  width: 300px;
+  height: auto;
+  border-radius: 600px;
+  margin: auto;
+  display: block;
+  padding: 5px;
+  border: 2px solid rgb(238, 27, 192);
+}
+
+#imagen2trivia:hover {
+-webkit-transform:scale(1.1);
+transform:scale(0.9);
+}
+
+#imagen3trivia
+{    
+  width: 300px;
+  height: auto;
+  border-radius: 600px;
+  margin: auto;
+  display: block;
+  padding: 5px;
+  border: 2px solid rgb(238, 27, 192);
+}
+
+#imagen3trivia:hover {
+-webkit-transform:scale(1.1);
+transform:scale(0.9);
+}
+
+#imagen4trivia
+{    
+  width: 300px;
+  height: auto;
+  border-radius: 600px;
+  margin: auto;
+  display: block;
+  padding: 5px;
+  border: 2px solid rgb(238, 27, 192);
+}
+
+#imagen4trivia:hover {
+-webkit-transform:scale(1.1);
+transform:scale(0.9);
+}
+
+/*Segunda parte de diseño*/
+
+div {
+  background-color: none;
+  width: 100%;
+}
+
+#imagen1fut
+{
+    width: 300px;
+    height: auto;
+    border-radius: 600px;
+    margin: auto;
+    display: block;
+    padding: 5px;
+    border: 2px solid rgb(27, 41, 238);
+}
+
+#imagen1fut:hover {
+  -webkit-transform:scale(1.1);
+  transform:scale(0.9);
+}
+
+#imagen2fut 
+{ 
+  width: 300px;
+  height: auto;
+  border-radius: 600px;
+  margin: auto;
+  display: block;
+  padding: 5px;
+  border: 2px solid rgb(27, 41, 238);
+}
+
+#imagen2fut:hover {
+-webkit-transform:scale(1.1);
+transform:scale(0.9);
+}
+
+#imagen3fut
+{    
+  width: 300px;
+  height: auto;
+  border-radius: 600px;
+  margin: auto;
+  display: block;
+  padding: 5px;
+  border: 2px solid rgb(27, 41, 238);
+}
+
+#imagen3fut:hover {
+-webkit-transform:scale(1.1);
+transform:scale(0.9);
+}
+
+#imagen4fut
+{    
+  width: 300px;
+  height: auto;
+  border-radius: 600px;
+  margin: auto;
+  display: block;
+  padding: 5px;
+  border: 2px solid rgb(27, 41, 238);
+}
+
+#imagen4fut:hover {
+-webkit-transform:scale(1.1);
+transform:scale(0.9);
+}
+/*Tercera parte de diseño*/
+div {
+  background-color: none;
+  width: 100%;
+}
+
+#imagen1rossy {
+    
+    width: 300px;
+    height: auto;
+    border-radius: 600px;
+    margin: auto;
+    display: block;
+    padding: 5px;
+    border: 3px solid rgb(240, 120, 242);
+}
+
+#imagen1rossy:hover {
+  -webkit-transform:scale(1.1);
+  transform:scale(0.9);
+}
+
+#imagen2rossy {
+    
+  width: 300px;
+  height: auto;
+  border-radius: 600px;
+  margin: auto;
+  display: block;
+  padding: 5px;
+  border: 3px solid rgb(240, 120, 242);
+}
+
+#imagen2rossy:hover {
+-webkit-transform:scale(1.1);
+transform:scale(0.9);
+}
+
+#imagen3rossy {
+    
+  width: 290px;
+  height: auto;
+  border-radius: 600px;
+  margin: auto;
+  display: block;
+  padding: 5px;
+  border: 3px solid rgb(240, 120, 242);
+}
+
+#imagen3rossy:hover {
+-webkit-transform:scale(1.1);
+transform:scale(0.9);
+}
+
+#imagen4rossy {
+    
+  width: 300px;
+  height: auto;
+  border-radius: 600px;
+  margin: auto;
+  display: block;
+  padding: 5px;
+  border: 3px solid rgb(240, 120, 242);
+}
+
+#imagen4rossy:hover {
+-webkit-transform:scale(1.1);
+transform:scale(0.9);
+}
+
+
+/* PIE DE PAGINA */
+footer{
+  font-size: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: aliceblue;
+  position: static;
+  margin-top: 50%;
+  width: 100%;
+  padding:  5px;
+  clear: both;
+  background-color: #000;
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 2px;
+}

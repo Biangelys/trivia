@@ -1,0 +1,117 @@
+<!--- hola chicas, esta es nuestra primera página de preguntas--->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="trivia.css" rel="stylesheet" type="text/css" />
+  <title> TRIVIA </title>
+  <style>
+    html {
+      margin: 0;
+      padding: 0;
+      background-image: url(http://bp1.blogger.com/_FHw9157J-FY/RblcqsxAMjI/AAAAAAAAAD8/34sl0CWvNN0/s400/7-nuevas-maravillas.jpg);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  </style>
+  <header>
+    <h1>JUEGO DE PREGUNTAS</h1>
+    <p>MARAVILLAS DEL MUNDO</p>
+  </header>
+  <div>
+    <h1><button <span id="tiempo"> </button></span></h1>
+  </div>
+</head>
+<div class="fondo"></div>
+<body>
+
+
+  <div class="container">
+    <section id="p0">
+      <h3> 1 - ¿Dónde se ubica esta maravilla?</h3>
+      <div>
+        <img id="imagen1trivia" src="https://gifimage.net/wp-content/uploads/2018/11/petra-gif-6.gif" alt="Petra">
+      </div>
+      <label id="incorrecta_a">
+        <input type="radio" value=1 name="p0" onclick="respuesta(0,this)"> Egipto
+      </label>
+      <label id="incorrecta_b">
+        <input type="radio" value=2 name="p0" onclick="respuesta(0,this)"> Mexico
+      </label>
+      <label id="correcta1">
+        <input type="radio" value=3 name="p0" onclick="respuesta(0,this)"> Jordania
+      </label>
+    </section>
+
+    <section id="p1">
+      <h3> 2 - ¿Cuál de las siguientes opciones es considerada una de las 7 maravillas?</h3>
+      <div>
+        <img id="imagen2trivia" src="https://media1.giphy.com/media/J7wfNFYi6dpXq/giphy.gif" alt="Machu">
+      </div>
+      <label id="incorrecta_c">
+        <input type="radio" value=1 name="p1" onclick="respuesta(1,this)"> Torre eiffel
+      </label>
+      <label id="incorrecta_d">
+        <input type="radio" value=2 name="p1" onclick="respuesta(1,this)"> Salto Angel
+      </label>
+      <label id="correcta2">
+        <input type="radio" value=3 name="p1" onclick="respuesta(1,this)"> Machu picchu
+      </label>
+    </section>
+
+    <section id="p2">
+      <h3> 3 - ¿De qué año data esta maravilla? </h3>
+      <div>
+        <img id="imagen3trivia" src="http://mural.uv.es/hecesla/imagenes/anigifColiseo.gif" alt="Coliseo">
+      </div>
+      <label id="correcta3">
+        <input type="radio" value=1 name="p2" onclick="respuesta(2,this)"> 72 d.C
+      </label>
+      <label id="incorrecta_e">
+        <input type="radio" value=2 name="p2" onclick="respuesta(2,this)"> 82 a.C
+      </label>
+      <label id="incorrecta_f">
+        <input type="radio" value=3 name="p2" onclick="respuesta(2,this)"> 500 d.C
+      </label>
+    </section>
+
+    <section id="p3">
+      <h3> 4 - ¿Cuántos kilometros de recorrido tiene la Muralla China?</h3>
+      <div>
+        <img id="imagen4trivia" src="http://rutasdechina.com/imagenes/gif%20peque%C3%B1os/4-dias.gif" alt="Muralla">
+      </div>
+      <label id="incorrecta_g">
+        <input type="radio" value=1 name="p3" onclick="respuesta(3,this)"> 8.500
+      </label>
+      <label id="correcta4">
+        <input type="radio" value=2 name="p3" onclick="respuesta(3,this)"> 7.300
+      </label>
+      <label id="incorrecta_h">
+        <input type="radio" value=3 name="p3" onclick="respuesta(3,this)"> 9.300
+      </label>
+    </section>
+
+
+
+    <button onclick="corregir()">CORREGIR</button>
+
+    <h2 id="CA">Cantidad acertadas: <span id="resultado"></span> </h2>
+    <h2 id="CF">Cantidad fallidas: <span id="fallida"></span> </h2>
+    <br><button id="jugar"> <a href="index.html">VOLVER A JUGAR</a> </button> </br>
+
+    <script src="triviota.js"></script>
+
+  </div>
+
+  <footer>
+    <p>Realizado por:</p>
+    <p>Equipo 5.2</p>
+
+  </footer>
+</body>
+
+</html>

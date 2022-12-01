@@ -1,0 +1,121 @@
+<!--- Rossy, esta será una tercera página--->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="trivia.css" rel="stylesheet" type="text/css" />
+  <title>TRIVIATON</title>
+  <style>
+    html {
+      margin: 0;
+      padding: 0;
+      background-image: url(https://i.pinimg.com/564x/d2/19/0a/d2190ad8fde9c6323dd8c29b5cc6c897.jpg);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  </style>
+  <header>
+    <h1>JUEGO DE PREGUNTAS</h1>
+    <p>DISNEY</p>
+  </header>
+  <div>
+    <h1><span><button id="tiempo" </button> </span></h1>
+  </div>
+</head>
+
+<body>
+  <div class="container">
+    <section id="p0">
+      <h3> 1 - De las siguientes películas ¿Cúal no es de Disney?</h3>
+      <div>
+        <img id="imagen1rossy" src="https://media.tenor.com/CkzLJRjg4AcAAAAC/thinking-winnie-the-pooh.gif" alt="Poh">
+      </div>
+      <label id="incorrecta_a">
+        <input type="radio" value=1 name="p0" onclick="respuesta_dos(0,this)"> Rapunzel
+      </label>
+      <label id="incorrecta_b">
+        <input type="radio" value=2 name="p0" onclick="respuesta_dos(0,this)"> Sherk
+      </label>
+      <label id="correcta1">
+        <!--- ESTA ES LA CORRECTA--->
+        <input type="radio" value=3 name="p0" onclick="respuesta_dos(0,this)"> Ralph el demoledor
+      </label>
+    </section>
+
+    <section id="p1">
+      <h3> 2 - ¿Qué película de Walt Disney se considera el primer largometraje animado de la historia?</h3>
+      <div>
+        <img id="imagen2rossy" src="https://i.gifer.com/rX.gif" alt="Mickey Mouse">
+      </div>
+      <label id="incorrecta_c">
+        <input type="radio" value=1 name="p1" onclick="respuesta_dos(1,this)"> Pinocho
+      </label>
+      <label id="correcta2">
+        <input type="radio" value=2 name="p1" onclick="respuesta_dos(1,this)"> Blancanieves y los Siete enanitos
+      </label>
+      <!--- ESTA ES LA CORRECTA--->
+      <label id="incorrecta_d">
+        <input type="radio" value=3 name="p1" onclick="respuesta_dos(1,this)"> Cenicienta
+      </label>
+    </section>
+
+    <section id="p2">
+      <h3> 3 - ¿Por qué se enlistó Mulán en el Ejército Imperial?</h3>
+      <div>
+        <img id="imagen3rossy" src="https://i.pinimg.com/originals/97/17/ad/9717ad9f80b3f1c1017093fe796c21f6.gif"
+          alt="Mulan">
+      </div>
+      <label id="incorrecta_e">
+        <input type="radio" value=1 name="p2" onclick="respuesta_dos(2,this)"> Porque no le brindaba honor a su
+        familia
+      </label>
+      <label id="incorrecta_f">
+        <input type="radio" value=2 name="p2" onclick="respuesta_dos(2,this)"> Estaba enamorada del general Li Shang
+      </label>
+      <label id="correcta3">
+        <input type="radio" value=3 name="p2" onclick="respuesta_dos(2,this)"> Para evitar que su padre enfermo
+        asistiera
+      </label>
+    </section>
+    <!--- ESTA ES LA CORRECTA--->
+    <section id="p3">
+      <h3> 4 - ¿Cuáles son los nombres de las hermanas protagonistas en 'Frozen'?</h3>
+      <div>
+        <img id="imagen4rossy"
+          src="https://64.media.tumblr.com/fefa857979adf7b234231b7334017c86/aa3e470c93404485-96/s1280x1920/b56f65b14a0d25faf426a26aee67453936e40817.gifv"
+          alt="Frozen">
+      </div>
+      <label id="incorrecta_g">
+        <input type="radio" value=1 name="p3" onclick="respuesta_dos(3,this)"> Luna y Miel
+      </label>
+      <label id="incorrecta_h">
+        <input type="radio" value=2 name="p3" onclick="respuesta_dos(3,this)"> Anastasia y Griselda
+      </label>
+      <label id="correcta4">
+        <input type="radio" value=3 name="p3" onclick="respuesta_dos(3,this)"> Elsa Y Anna
+      </label>
+    </section>
+    <!--- ESTA ES LA CORRECTA--->
+
+
+    <button onclick="siguiente()">CORREGIR</button>
+    <h2 id="CA">Cantidad acertadas: <span id="resultado2"></span> </h2>
+    <h2 id="CF">Cantidad fallidas: <span id="fallida2"></span> </h2>
+    <br><button id="jugar"> <a href="index.html">VOLVER A JUGAR</a> </button> </br>
+
+    <!--<h2>Preguntas acertadas: <span id="resultado"</span> </h2>!-->
+
+    <script src="trivia3.js"></script>
+  </div>
+  <footer>
+    <p>Realizado por:</p>
+    <p>Equipo 5.2</p>
+
+  </footer>
+
+</body>
+
+</html>
